@@ -27,8 +27,9 @@ class Homepage
     {
         $data = [
             'name' => $this->request->getParameter('name', 'stranger'),
-            'menuItems' => [['href' => '/', 'text' => 'Welcoem']],
+            'menuItems' => [['href' => '/', 'text' => 'Welcome']],
         ];
+
         $html = $this->renderer->render('Homepage', $data);
         $this->response->setContent($html);
     }

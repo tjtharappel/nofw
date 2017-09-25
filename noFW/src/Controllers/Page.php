@@ -25,7 +25,7 @@
         public function show($params)
         {
             $slug = $params['slug'];
-        
+
             try {
                 $data['content'] = $this->pageReader->readBySlug($slug);
             } catch (InvalidPageException $e) {
